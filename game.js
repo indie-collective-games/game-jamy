@@ -11,9 +11,14 @@ window.addEventListener('load', () => {
 
 tressimple.addEventListener('click', () => {
   pageSummary.style.display = 'block';
+
+  const summaryspeech = new SpeechSynthesisUtterance(`Et bien c'est très simple. ${pageSummary.innerText}`);
+  summaryspeech.lang = 'fr-fr';
+  window.speechSynthesis.speak(summaryspeech)
 });
 
 const doTheThing = () => {
+  window.speechSynthesis.cancel();
   fetch('http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json&origin=*')
     .then(res => res.json())
     .then(data => {

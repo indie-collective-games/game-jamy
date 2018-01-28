@@ -29,3 +29,11 @@ button:focus,
 button:hover {
   background: #1d3a3a;
 }
+
+#pagesummary {
+  display: none;
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
