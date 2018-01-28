@@ -1,3 +1,31 @@
 body {
   font-family: sans-serif;
+  background: url('https://img.buzzfeed.com/buzzfeed-static/static/2017-05/29/7/asset/buzzfeed-prod-fastlane-01/anigif_sub-buzz-797-1496058809-2.gif') no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 130px;
+  color: #2c3583;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+}
+button {
+  transition: all ease-in-out .2s;
+  border-radius: 5px;
+  background: darkslategrey;
+  font-size: 40px;
+  color: white;
+  margin-top: 80px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 #1d3a3a, 2px 2px 0 #1d3a3a, 3px 3px 0 #1d3a3a;
+}
+button:active,
+button:focus,
+button:hover {
+  background: #1d3a3a;
 }

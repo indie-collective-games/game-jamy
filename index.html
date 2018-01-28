@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <title>Game Jamy</title>
-  <link rel='style' href='./style.css'>
+  <link rel="stylesheet" type="text/css"  href="./style.css">
 </head>
 
 <body>
   <h1>Mais dis-donc Jamy!</h1>
-  <script src='./game.js' />
+  <img style="display:block;width:250px;height:250px;border-radius:50%;margin:auto" src="https://i.ytimg.com/vi/IlhJcfKNk3I/hqdefault.jpg">
+  <button>ALLEZ !</button>
+  <audio id="audio" src="http://mybuttons.fr/sounds/cestpassorcier.mp3"></audio>
+  <script>window.onload = function () {document.getElementById("audio").play()};</script>
+  <script src="./game.js"></script>
 </body>
