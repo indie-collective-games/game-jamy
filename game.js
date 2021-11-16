@@ -19,7 +19,7 @@ tressimple.addEventListener('click', () => {
 
 const doTheThing = () => {
   window.speechSynthesis.cancel();
-  fetch('http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json&origin=*')
+  fetch('https://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json&origin=*')
     .then(res => res.json())
     .then(data => {
       const { title, extract } = Object.values(data.query.pages)[0];
